@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> PROJET1</title>
+        <style>
+            .progress-container {
+                width: 100%;
+                background-color: #f1f1f1;
+            }
+            .progress-bar{
+                width: 0;
+                height: 20px;
+                background-color: #4caf50;
+                transition: width 0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="progress-container">
+            <div class="progress-bar" id="myProgressBar"></div>
+        </div>
+        <script language="javascript">
+            function updateProgress(progress){
+                var progressBar= document.getElementById("myProgressBar");
+                progressBar.style.width=progress + "%";
+            }
+            updateProgress(50);
+        </script>
+    </body>
+</html>
